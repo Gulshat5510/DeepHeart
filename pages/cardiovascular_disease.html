@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<title>
+		Build a Survey Form using HTML and CSS
+	</title>
+
+	<style>
+
+		/* Styling the Body element i.e. Color,
+		Font, Alignment */
+		body {
+			background-color: #00ACEE;
+			font-family: Verdana;
+			text-align: center;
+		}
+
+		/* Styling the Form (Color, Padding, Shadow) */
+		form {
+			background-color: #fff;
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+
+		/* Styling form-control Class */
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		/* Styling form-control Label */
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		/* Styling form-control input,
+		select, textarea */
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+
+		/* Styling form-control Radio
+		button and Checkbox */
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+
+		/* Styling Button */
+		button {
+			background-color: #00ACEE;
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			font-size: 21px;
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 20px;
+            color: #fff;
+		}
+	</style>
+</head>
+
+<body>
+    <input type="button" value="Back" onclick="window.history.back()" /> 
+	<form id="form">
+		<div class="form-control">
+			<label for="age" id="label-name">
+				How old are you?
+			</label>
+			<input type="number"
+				id="age"
+				placeholder="Enter your age" />
+		</div>
+		<div class="form-control">
+			<label for="role" id="label-role">
+				Male/Female?
+			</label>
+			<select name="role" id="role">
+				<option value="student">Female</option>
+				<option value="intern">Male</option>
+			</select>
+		</div>
+		<div class="form-control">
+			<label for="height">
+				What is your height?
+			</label>
+			<input type="number"
+				id="height"
+				placeholder="Enter your height" />
+		</div>
+        <div class="form-control">
+			<label for="weight">
+				What is your weight?
+			</label>
+			<input type="number"
+				id="weight"
+				placeholder="Enter your weight" />
+		</div>
+        <div class="form-control">
+			<label for="systolic">
+				Your Systolic blood pressure?
+			</label>
+			<input type="number"
+				id="systolic"
+				placeholder="Enter your systolic blood pressure" />
+		</div>
+        <div class="form-control">
+			<label for="Diastolic">
+				Your Systolic blood pressure?
+			</label>
+			<input type="number"
+				id="Diastolic"
+				placeholder="Enter your Diastolic blood pressure" />
+		</div>
+        <div class="form-control">
+			<label>
+				What is your cholesterol level?
+			</label>
+			<label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed">normal</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">above normal</input>
+			</label>
+            <label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">well above normal</input>
+			</label>
+		</div>
+                <div class="form-control">
+			<label>
+				What is your glucose level?
+			</label>
+			<label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed">normal</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">above normal</input>
+			</label>
+            <label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">well above normal</input>
+			</label>
+		</div>
+        <div class="form-control">
+			<label>
+				Do you smoke?
+			</label>
+			<label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed">Yes</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">No</input>
+			</label>
+		</div>
+         <div class="form-control">
+			<label>
+				Do you intake alcohol?
+			</label>
+			<label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed">Yes</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">No</input>
+			</label>
+		</div>
+        <div class="form-control">
+			<label>
+				Do you perform physical activities?
+			</label>
+			<label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed">Yes</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">No</input>
+			</label>
+		</div>
+		<button type="submit" value="submit">
+			Submit
+		</button>
+	</form>
+</body>
+
+</html>
+
+</body>
+</html>
