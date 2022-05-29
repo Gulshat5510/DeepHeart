@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<title>
+		Build a Survey Form using HTML and CSS
+	</title>
+
+	<style>
+
+		/* Styling the Body element i.e. Color,
+		Font, Alignment */
+		body {
+			background-color: #00ACEE;
+			font-family: Verdana;
+			text-align: center;
+		}
+
+		/* Styling the Form (Color, Padding, Shadow) */
+		form {
+			background-color: #fff;
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+
+		/* Styling form-control Class */
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		/* Styling form-control Label */
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		/* Styling form-control input,
+		select, textarea */
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+
+		/* Styling form-control Radio
+		button and Checkbox */
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+
+		/* Styling Button */
+		button {
+			background-color: #00ACEE;
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			font-size: 21px;
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 20px;
+            color: #fff;
+		}
+	</style>
+</head>
+
+<body>
+    <input type="button" value="Back" onclick="window.history.back()" /> 
+	<form id="form">
+		<div class="form-control">
+			<label for="age" id="label-name">
+				How old are you?
+			</label>
+			<input type="number"
+				id="age"
+				placeholder="Enter your age" />
+		</div>
+		<div class="form-control">
+			<label for="role" id="label-role">
+				Male/Female?
+			</label>
+			<select name="role" id="role">
+				<option value="student">Female</option>
+				<option value="intern">Male</option>
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label>
+				Your Chest Pain type?
+			</label>
+			<label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed">Typical Angina</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">Atypical Angina</input>
+			</label>
+			<label for="recommed-3">
+				<input type="radio"
+					id="recommed-3"
+					name="recommed">Non-Anginal Pain</input>
+			</label>
+            <label for="recommed-4">
+				<input type="radio"
+					id="recommed-4"
+					name="recommed">Asymptomatic</input>
+			</label>
+		</div>
+		<div class="form-control">
+			<label for="rest_blood">
+				Resting blood pressure?
+			</label>
+			<input type="number"
+				id="rest_blood"
+				placeholder="Enter your Resting blood pressure" />
+		</div>
+        <div class="form-control">
+			<label for="serum">
+				Serum cholesterol in [mm/d] ?
+			</label>
+			<input type="number"
+				id="serum"
+				placeholder="Enter your Resting blood pressure" />
+		</div>
+        <div class="form-control">
+			<label>
+				Fasting blood sugar?
+			</label>
+			<label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed">FastingBS > 120 mg/d</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">other</input>
+			</label>
+		</div>
+        <div class="form-control">
+			<label>
+				Resting electrocardiogram results?
+			</label>
+			<label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed">Normal</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">Having ST-T wave abnormality</input>
+			</label>
+            			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">Showing probable or definite left ventricular hypertrophy</input>
+			</label>
+		</div>
+          <div class="form-control">
+			<label for="max">
+				Maximum heart rate achieved ?
+			</label>
+			<input type="number"
+				id="max"
+				placeholder="Enter your maximum heart rate achieved" />
+		</div>
+        <div class="form-control">
+			<label>
+				Did you have an exercise-induced angina?
+			</label>
+			<label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed">Yes</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">No</input>
+			</label>
+		</div>
+        <div class="form-control">
+			<label for="st">
+				Oldpeak = ST [Numeric value measured in depression]?
+			</label>
+			<input type="number"
+				id="st"
+				placeholder="Enter your Oldpeak" />
+		</div>
+        <div class="form-control">
+			<label>
+				What is the slope of the peak exercise ST segment?
+			</label>
+			<label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed">Upsloping</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">Flat</input>
+			</label>
+            <label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">Downsloping</input>
+			</label>
+		</div>
+		<button type="submit" value="submit">
+			Submit
+		</button>
+	</form>
+</body>
+
+</html>
+
+</body>
+</html>
